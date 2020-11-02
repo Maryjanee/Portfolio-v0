@@ -21,6 +21,11 @@ a {
 
 .line {
   background: black;
+  height: .1rem;
+  width: 5rem;
+  display: inline-block;
+  margin-left: 1rem;
+  margin-top: .2rem;
 }
 
 header nav {
@@ -35,6 +40,19 @@ header nav {
           align-items: center;
 }
 
+header .title {
+  margin-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 header h1 {
   font-weight: 400;
   font-size: 1rem;
@@ -42,10 +60,25 @@ header h1 {
 
 #nav-btn {
   background-color: #4C45E7;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   border: none;
   padding: .7rem;
+}
+
+#nav-btn img {
+  width: 65%;
+}
+
+#close-btn {
+  background: transparent;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  padding: 0.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
 }
 
 .menu {
@@ -53,19 +86,9 @@ header h1 {
   width: 50%;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -800px;
   bottom: 0;
   padding-top: 2rem;
-  display: none;
-}
-
-.menu #close-btn {
-  background: transparent;
-  width: 2rem;
-  height: 2rem;
-  border: none;
-  padding: 0.5rem;
-  margin-left: 70%;
 }
 
 .menu ul {
@@ -80,4 +103,40 @@ header h1 {
 
 .menu li a {
   color: #fff;
+}
+
+@-webkit-keyframes mymove {
+  from {
+    right: -800px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes mymove {
+  from {
+    right: -800px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@-webkit-keyframes close {
+  from {
+    right: 0;
+  }
+  to {
+    right: -800px;
+  }
+}
+
+@keyframes close {
+  from {
+    right: 0;
+  }
+  to {
+    right: -800px;
+  }
 }

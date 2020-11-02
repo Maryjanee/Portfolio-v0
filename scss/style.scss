@@ -22,26 +22,55 @@ a{
 }
 
 .line{
-  background:black
+  background:black;
+  height:.1rem;
+  width:5rem;
+  display: inline-block;
+  margin-left:1rem;
+  margin-top:.2rem;
 }
+
 header{
   nav{
     display:flex;
     justify-content: space-between;
     align-items: center;
   }
+  .title{
+    margin-left:2rem;
+    // margin-top:1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  
   h1{
     font-weight:400;
     font-size:1rem;
+    
   }
 }
 
 #nav-btn {
   background-color: $purple;
-  width:3rem;
-  height:3rem;
+  width:4rem;
+  height:4rem;
   border:none;
   padding:.7rem;
+  img{
+    width:65%;
+  }
+}
+#close-btn {
+  background: transparent;
+  width:2rem;
+  height:2rem;
+  border:none;
+  padding: 0.5rem;
+  position:absolute;
+  top:1rem;
+  right:2rem;
 }
 
 .menu {
@@ -49,19 +78,13 @@ header{
   width:50%;
   position:fixed;
   top:0 ;
-  right:0;
+  right:-800px;
   bottom:0;
   padding-top:2rem;
-  display: none;
   
-  #close-btn {
-    background: transparent;
-    width:2rem;
-    height:2rem;
-    border:none;
-    padding: 0.5rem;
-    margin-left: 70%;
-  }
+  
+  
+  
   ul{
     margin-top:1rem;
   }
@@ -75,5 +98,18 @@ header{
       color:$white;
     }
   }
+  
+}
+
+@keyframes mymove {
+  from {right: -800px;}
+  to {right: 0;}
+}
+@keyframes close {
+  from {right: 0;}
+  to {right: -800px;}
+}
+
+@media only screen and (min-width: 992px) {
   
 }
