@@ -1,12 +1,13 @@
 $white:#fff;
 $purple: #4C45E7;
+$text-color: #010526;
 
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 li{
@@ -16,9 +17,14 @@ a{
   text-decoration: none;
 }
 
+
 .container{
   width:80%;
   margin:0 auto;
+}
+
+.d-flex{
+  display:flex;
 }
 
 .line{
@@ -82,9 +88,6 @@ header{
   bottom:0;
   padding-top:2rem;
   
-  
-  
-  
   ul{
     margin-top:1rem;
   }
@@ -100,16 +103,106 @@ header{
   }
   
 }
+.description{
+  text-align:left;
+  margin-top:6rem;
+  h2{
+    color:$text-color;
+    margin-bottom:2rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  p{
+    font-size:1.1rem;
+    margin-bottom:2rem;
+    line-height:2rem;
+  } 
+  
+}
+.scroll{
+  color:$text-color;
+  p{
+    font-size:.9rem;
+  }
+  
+}
+
+.arrow-container{
+  width:.7rem;
+  img{
+    width:100%;
+    margin-left: .7rem;
+    animation-name: arrow;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+  }
+}
 
 @keyframes mymove {
   from {right: -800px;}
   to {right: 0;}
 }
-@keyframes close {
-  from {right: 0;}
-  to {right: -800px;}
+
+@keyframes arrow{
+  0%{margin-top:.1rem;}
+  100%{margin-top:.5rem;}
+}
+
+.author-image{
+  width:100%;
+  height:10px;
+  img{
+    width:100%;
+    max-height:auto;
+  }
+}
+.showcase{
+  flex-direction:column;
 }
 
 @media only screen and (min-width: 992px) {
+  
+  #nav-btn {
+   background:none;
+   margin-right: 2rem;
+  }
+  
+  .img-background{
+    width:35%;
+    height:100%;
+    background:$purple;
+    position: absolute;
+    right:0;
+    top:0;
+    z-index:-1;  
+  }
+  #close-btn{
+    right:4rem;
+  }
+  .showcase{
+    flex-direction:row;
+    justify-content: space-between;
+    height:100vh;
+    
+    .scroll{
+      margin-top:7rem;
+      p{
+      font-weight:600;
+      }
+    
+    }
+    .author-image{
+      width:100%;
+      height:100%;
+      
+      img{
+        width:58%;
+        max-height:auto;
+        margin-left: 14rem;
+      }
+    }
+    
+  }
+  
   
 }
