@@ -1,0 +1,79 @@
+$white:#fff;
+$purple: #4C45E7;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+}
+
+li{
+  list-style:none;
+}
+a{
+  text-decoration: none;
+}
+
+.container{
+  width:80%;
+  margin:0 auto;
+}
+
+.line{
+  background:black
+}
+header{
+  nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h1{
+    font-weight:400;
+    font-size:1rem;
+  }
+}
+
+#nav-btn {
+  background-color: $purple;
+  width:3rem;
+  height:3rem;
+  border:none;
+  padding:.7rem;
+}
+
+.menu {
+  background:$purple;
+  width:50%;
+  position:fixed;
+  top:0 ;
+  right:0;
+  bottom:0;
+  padding-top:2rem;
+  display: none;
+  
+  #close-btn {
+    background: transparent;
+    width:2rem;
+    height:2rem;
+    border:none;
+    padding: 0.5rem;
+    margin-left: 70%;
+  }
+  ul{
+    margin-top:1rem;
+  }
+  
+  li{
+    padding:.7rem;
+    font-size:1rem;
+    font-weight: 500;
+    
+    a{
+      color:$white;
+    }
+  }
+  
+}
