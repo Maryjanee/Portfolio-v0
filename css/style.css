@@ -33,6 +33,14 @@ footer {
           flex-direction: column;
 }
 
+#contact #email {
+  width: 1rem;
+}
+
+#contact #email img {
+  width: 100%;
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
