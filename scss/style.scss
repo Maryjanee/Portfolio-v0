@@ -26,6 +26,14 @@ button:hover,button:active{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+footer{
+  background: $purple;
+padding:1rem 1.5rem;
+flex-direction: column;
+div{
+}
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -49,6 +57,10 @@ button:hover,button:active{
   display: inline-block;
   margin-left: 5rem;
   margin-top: 0.3rem;
+}
+
+.copyright-text{
+  color:$white;
 }
 
 header {
@@ -81,11 +93,10 @@ section {
   .line {
     height: 0.2rem;
     background: $purple;
-    margin-top: 0.7rem;
+    margin-top: 0.4rem;
   }
   p {
     margin-left: 1rem;
-    margin-top: -0.5rem;
     font-size: 1.8rem;
     font-weight: 700;
   }
@@ -314,10 +325,15 @@ header #nav-btn {
     }
   }
   
+ 
+  
 }
 
 @media only screen and (min-width: 992px) {
   
+  footer{
+    flex-direction: row;
+  }
   .img-background, .author-image{
     display: block;
   }
