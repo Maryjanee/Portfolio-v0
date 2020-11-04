@@ -127,12 +127,16 @@ section {
     width: 90%;
 
     .project-lang {
-      margin: 2rem 0;
+      margin:1rem 0;
+      p {
+     width:5rem;
+     display:inline-block;
     }
+  }
     .project-build {
       background: $grey-color;
       margin: 1rem auto;
-      padding: 0.6rem;
+      padding: 0.2rem;
       text-align: center;
       border-radius: 0.9rem;
       font-size: 0.9rem;
