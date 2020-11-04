@@ -12,7 +12,7 @@
 
 
 ## Live Demo
-[Fashion Eye Website](maryjaneakpagbue.netlify.app)
+[Link](https://maryjaneakpagbue.netlify.app/)
 
 
 ### Setup
