@@ -57,6 +57,10 @@ section {
   margin-top: 2rem;
 }
 
+.mr-4 {
+  margin-right: 2rem;
+}
+
 .d-block {
   display: block;
   width: 10rem;
@@ -64,7 +68,7 @@ section {
 }
 
 .section-title {
-  margin-left: 1rem;
+  margin: 1rem 0 2rem 1rem;
 }
 
 .section-title .line {
@@ -145,8 +149,13 @@ section {
   color: #4C45E7;
 }
 
+.sm-links {
+  margin: 2rem 0;
+}
+
 .sm-links a {
   width: 1.5rem;
+  margin-right: 2rem;
 }
 
 .sm-links a img {

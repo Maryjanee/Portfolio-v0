@@ -52,8 +52,12 @@ header{
 section{
   margin:4rem auto;
 }
+
 .mt-2{
   margin-top:2rem;
+}
+.mr-4{
+  margin-right:2rem;
 }
 .d-block{
   display:block;
@@ -62,7 +66,7 @@ section{
 }
 
 .section-title{
-  margin-left: 1rem;
+  margin:1rem 0 2rem 1rem;
   .line{
     height:.2rem;
     background:$purple;
@@ -280,8 +284,10 @@ section{
   // }
   
   .sm-links{
+    margin: 2rem 0;
     a{
       width:1.5rem;
+      margin-right:2rem;
       img{
         width:100%;
       }
