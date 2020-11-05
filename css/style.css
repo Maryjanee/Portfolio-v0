@@ -265,7 +265,7 @@ header #nav-btn img {
   width: 50%;
   position: fixed;
   top: 0;
-  right: -800px;
+  right: -1400px;
   bottom: 0;
   padding-top: 2rem;
 }
@@ -502,7 +502,7 @@ header #nav-btn img {
 
 @-webkit-keyframes mymove {
   from {
-    right: -800px;
+    right: -1200px;
   }
   to {
     right: 0;
@@ -511,7 +511,7 @@ header #nav-btn img {
 
 @keyframes mymove {
   from {
-    right: -800px;
+    right: -1200px;
   }
   to {
     right: 0;

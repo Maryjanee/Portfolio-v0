@@ -220,7 +220,7 @@ header #nav-btn {
   width: 50%;
   position: fixed;
   top: 0;
-  right: -800px;
+  right: -1400px;
   bottom: 0;
   padding-top: 2rem;
 
@@ -426,7 +426,7 @@ header #nav-btn {
 
 @keyframes mymove {
   from {
-    right: -800px;
+    right: -1200px;
   }
   to {
     right: 0;
