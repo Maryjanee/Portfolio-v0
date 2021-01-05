@@ -162,7 +162,8 @@ section {
 }
 
 .project-tile .project-description .project-lang p {
-  width: 5rem;
+  width: auto;
+  padding: .5rem .8rem;
   display: inline-block;
 }
 
