@@ -19,6 +19,10 @@ button {
   outline: none;
 }
 
+#about p {
+  margin: .3rem 0;
+}
+
 button:hover, button:active {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -238,7 +242,6 @@ h1 {
 
 header #nav-btn {
   background-color: #4c45e7;
-  border: 1px solid green;
   width: 4rem;
   height: 4rem;
   border: none;
@@ -349,6 +352,9 @@ header #nav-btn img {
 
 .sm-links {
   margin: 2rem 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .sm-links a {

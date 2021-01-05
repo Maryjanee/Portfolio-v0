@@ -205,7 +205,7 @@ h1 {
 
 header #nav-btn {
   background-color: $purple;
-  border:1px solid green;
+  
   width: 4rem;
   height: 4rem;
   border: none;
@@ -309,6 +309,8 @@ header #nav-btn {
 
 .sm-links {
   margin: 2rem 0;
+  justify-content: flex-start;
+ 
   a {
     width: 1.5rem;
     margin-right: 2rem;
