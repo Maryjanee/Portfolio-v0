@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Quicksand", sans-serif;
+  font-family: serif;
   line-height: 2rem;
 }
 
@@ -17,6 +17,10 @@ a {
 
 button {
   outline: none;
+}
+
+body {
+  background: blueviolet;
 }
 
 #about p {
@@ -118,24 +122,19 @@ section {
 }
 
 .section-title {
-  margin: 1rem 0 1rem 2rem;
+  margin: 1rem 0 2rem 1rem;
 }
 
 .section-title .line {
   height: 0.2rem;
   background: #4c45e7;
   margin-top: 0.4rem;
-  display: none;
 }
 
 .section-title p {
   margin-left: 1rem;
   font-size: 1.8rem;
   font-weight: 700;
-}
-
-#projects {
-  margin-top: 20rem;
 }
 
 .projects-container {
@@ -152,7 +151,8 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 1.5rem 2rem 3rem 2rem;
+  padding: 1.5rem 1rem 3rem 1rem;
+  border: 1px solid green;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -234,7 +234,7 @@ nav {
 }
 
 .title {
-  margin-left: .8rem;
+  margin-left: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,10 +244,6 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.title .line {
-  display: none;
 }
 
 h1 {
@@ -354,7 +350,6 @@ header #nav-btn img {
 }
 
 .section-title .line {
-  display: block;
   border: 1px solid #4c45e7;
   margin-top: 1.1rem;
   width: 8rem;
@@ -380,18 +375,6 @@ header #nav-btn img {
 
 .sm-links a img {
   width: 100%;
-}
-
-.project-link-container {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.project-link-container .project-link {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0.3rem;
 }
 
 .about-author-container {
