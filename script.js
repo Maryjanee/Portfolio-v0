@@ -8,6 +8,6 @@ navButton.addEventListener('click', ()=>{
   
 })
 closeButton.addEventListener('click', ()=>{
-  location.reload();
+  menuBar.style.right = '-1400px';
 })
 
