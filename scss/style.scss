@@ -26,7 +26,7 @@ button{
 #about{
   
   p{
-  margin:.3rem 0;
+  margin:1rem 0;
   }
   
 }
@@ -218,7 +218,9 @@ h1 {
 
 header #nav-btn {
   background-color: $purple;
-  
+  position: fixed;
+  right:0;
+  top:1rem;
   width: 4rem;
   height: 4rem;
   border: none;
@@ -303,9 +305,6 @@ header #nav-btn {
     max-height: auto;
   }
 }
-// // .showcase{
-// //   flex-direction:column;
-// // }
 
 .section-title {
   .line {
@@ -379,6 +378,11 @@ header #nav-btn {
   }
   .img-background, .author-image{
     display: block;
+   
+  }
+  .author-image{
+    margin-top: 3rem;
+    border-radius: 50%;
   }
   .projects-container {
     .project-tile {
@@ -435,6 +439,7 @@ header #nav-btn {
   flex-direction: row;
   justify-content: space-between;
   height: 100vh;
+
 
   .scroll {
     margin-top: 4rem;
