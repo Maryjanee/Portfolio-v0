@@ -20,7 +20,7 @@ button {
 }
 
 #about p {
-  margin: .3rem 0;
+  margin: 1rem 0;
 }
 
 .flex-wrap {
@@ -257,6 +257,9 @@ h1 {
 
 header #nav-btn {
   background-color: #4c45e7;
+  position: fixed;
+  right: 0;
+  top: 1rem;
   width: 4rem;
   height: 4rem;
   border: none;
@@ -433,6 +436,10 @@ header #nav-btn img {
   }
   .img-background, .author-image {
     display: block;
+  }
+  .author-image {
+    margin-top: 3rem;
+    border-radius: 50%;
   }
   .projects-container .project-tile {
     -webkit-box-orient: horizontal;
